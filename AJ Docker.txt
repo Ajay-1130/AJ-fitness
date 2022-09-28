@@ -1,0 +1,42 @@
+668040133276
+
+
+
+
+Hi Team,
+
+I am new to AWS and I just started learning/exploring resources of different services available on AWS. Since i am not aware of the charges for the uses of the resources and i am still learning the offerings, I would request to waive off the bill.
+
+I will make sure that I am utilizing the services and its resources judiciously in the future.
+
+Thanks
+
+
+
+
+
+
+
+
+# Pull base image
+FROM ubuntu
+
+
+# Dockerfile Maintainer
+MAINTAINER "ohalajay1110@gmail.com"
+
+# Install nginx and adjust nginx config to stay in foreground
+RUN apt-get update && apt-get install -y nginx; \
+ echo "daemon off:" >> /etc/nginx/nginx.conf
+
+# Expose HTTP
+EXPOSE 80
+
+# Start nginx
+CMD ["/usr/sbin/nginx"]
+
+
+
+docker run -it -–name mycontainer myimage /bin/bash
+
+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
